@@ -8,6 +8,7 @@
     "react-scripts": "3.1.1"
   },
   "scripts": {
+    "install-dev": "yarn add prettier eslint-config-prettier eslint-plugin-prettier --dev",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
