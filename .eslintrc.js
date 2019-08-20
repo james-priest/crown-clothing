@@ -38,7 +38,7 @@ module.exports = {
     "prettier/prettier": ["error",
       {
         // "trailingComma": "es5",
-        "jsxSingleQuote": true,
+        // "jsxSingleQuote": true,
         "printWidth": 80,
         "semi": true,
         "singleQuote": true,
