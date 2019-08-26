@@ -2,6 +2,7 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/firestore';
 
+// cSpell:disable
 const config = {
   apiKey: 'AIzaSyASDQRXc7hWYncV_x7oCAVbYUVcpFHvHvA',
   authDomain: 'crown-db-4a666.firebaseapp.com',
@@ -11,6 +12,7 @@ const config = {
   messagingSenderId: '272818249661',
   appId: '1:272818249661:web:857dbd91088b92e4'
 };
+// cSpell:enable
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
