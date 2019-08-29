@@ -4,7 +4,7 @@ export const addItemToCart = (cartItems, cartItemToAdd) => {
   );
 
   if (existingCartItem) {
-    // .map() returns a new array which is necessary for reducer
+    // .map() returns new array; necessary for reducer
     return cartItems.map(cartItem =>
       cartItem.id === cartItemToAdd.id
         ? { ...cartItem, quantity: cartItem.quantity + 1 }
