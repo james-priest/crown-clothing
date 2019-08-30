@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { createStructuredSelector } from 'reselect';
 
 import CustomButton from '../custom-button/custom-button.component';
 import CartItem from '../cart-item/cart-item.component';
@@ -22,9 +23,9 @@ const CartDropdown = ({ cartItems }) => (
 //   cartItems
 // });
 
-// Use memoized selector fpr better performance
-const mapStateToProps = state => ({
-  cartItems: selectCartItems(state)
+// Use memoized selector for better performance
+const mapStateToProps = createStructuredSelector({
+  cartItems: selectCartItems
 });
 
 export default connect(mapStateToProps)(CartDropdown);
